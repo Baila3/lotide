@@ -17,10 +17,10 @@ const eqArrays = function(arr1, arr2){
   } 
    for (let i = 0; i < ray1.length; i++){
    if (ray1[i] !== ray2[i]){
-     return "Assertion Failed: These don't look the same";
+     return `🛑🛑🛑 Assertion Failed: ${ray1}  !== ${ray2}`
    } 
  
   }
-   return "Assertion Passed: Like identical twins";
+   return `✅✅✅ Assertion Passed:  ${ray1}  === ${ray2}`;
   };
   console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));

@@ -17,26 +17,19 @@ const eqArrays = function(arr1, arr2){
   } 
    for (let i = 0; i < ray1.length; i++){
    if (ray1[i] !== ray2[i]){
-     return "Assertion Failed: These don't look the same";
+     return "🛑🛑🛑 Assertion Failed: These don't look the same";
    } 
  
   }
-   return "Assertion Passed: Like identical twins";
+   return "✅✅✅ Assertion Passed: Like identical twins";
   };
 
   const letterPositions = function(sentence) {
     let results = {};
   for(let i = 0; i < sentence.length; i++){
-      // if (results[i] !== sentence){
-      //     results[sentence[i]] = []; 
-      //     results[sentence[i]].push(i)
-      //  }
       if(results[sentence[i]] && sentence[i] !== " ") {
-  
-        // results = {...results, [sentence[i]] : [...results[sentence[i]], i]}
         results[sentence[i]] = [results[sentence[i]], i]
       } else {
-        // results = {...results, [sentence[i]] : [i]}
         results[sentence[i]] = i
       }
   }

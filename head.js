@@ -1,7 +1,7 @@
 
-const assertEqual = function(Arr) {
+
+const head = function(Arr) {
 return Arr[0]
 }
+module.exports = head;
   // TEST CODE
-  console.log(assertEqual(["Lighthouse Labs", "Bootcamp"]));
-  console.log(assertEqual([1, 2]));

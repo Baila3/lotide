@@ -32,7 +32,12 @@ const map = function(array, callback) {
   return results;
 }
 const results1 = map(words, word => word[0]);
-console.log(results1);
 
-console.log(assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']));
-console.log(assertArraysEqual(results1, ['w', 'c', 't', 'm', 't']));
+const input = [
+  { x: 3, y: 4 },
+  { x: 12, y: 5 },
+  { x: 8, y: 15 }
+];
+const result = input.map();
+
+
